@@ -3,8 +3,9 @@ version: '3'
 vars:
   SRC_DIR:
     sh: pwd
+  PATCH_DIR: "{{.SRC_DIR}}/patch"
   
-  PNG_VERSION: 1.6.37
+  PNG_VERSION: 1.6.40
   PNG_NAME: libpng-{{.PNG_VERSION}}
   PNG_SRC: "{{.SRC_DIR}}/{{.PNG_NAME}}"
   PNG_ARCHIVE: libpng.a
@@ -16,29 +17,30 @@ vars:
   JPEG_ARCHIVE: libjpeg.a
   JPEG_CONFIG: "{{.JPEG_SRC}}/configure"
 
-  TIFF_NAME: tiff-4.3.0
+  TIFF_NAME: tiff-4.6.0
   TIFF_SRC:  "{{.SRC_DIR}}/{{.TIFF_NAME}}"
   TIFF_ARCHIVE: libtiff.a
   TIFF_CONFIG: "{{.TIFF_SRC}}/configure"
 
-  TESSERACT_VERSION: 4.1.3
+  TESSERACT_VERSION: 5.3.3
   TESSERACT_NAME: tesseract-{{.TESSERACT_VERSION}}
   TESSERACT_SRC: "{{.SRC_DIR}}/{{.TESSERACT_NAME}}"
   TESSERACT_ARCHIVE: libtesseract.a
   TESSERACT_AUTOGEN: "{{.TESSERACT_SRC}}/autogen.sh"
   TESSERACT_CONFIG: "{{.TESSERACT_SRC}}/configure"
 
-  LEPTONICA_VERSION: 1.82.0
+  LEPTONICA_VERSION: 1.84.0
   LEPTONICA_NAME: leptonica-{{.LEPTONICA_VERSION}}
   LEPTONICA_SRC:  "{{.SRC_DIR}}/{{.LEPTONICA_NAME}}"
-  LEPTONICA_ARCHIVE: liblept.a
+  LEPTONICA_ARCHIVE: libleptonica.a
   LEPTONICA_AUTOGEN: "{{.LEPTONICA_SRC}}/autogen.sh"
   LEPTONICA_CONFIG: "{{.LEPTONICA_SRC}}/configure"
 
   LIBTESSERACT_PROJECT: libtesseract.xcodeproj
 
-  IOS_VERSION_MIN: iphoneos-version-min=11.0
-  IOS_ARCH_NAME: arm-apple-darwin64
+  IOS_VERSION_MIN_NUMBER: 15.0
+  IOS_VERSION_MIN: "iphoneos-version-min={{.IOS_VERSION_MIN_NUMBER}}"
+  IOS_ARCH_NAME: "arm64-apple-ios{{.IOS_VERSION_MIN_NUMBER}}"  
   IOS_HOST: "{{.IOS_ARCH_NAME}}"
   IOS_PLATFORM_PREFIX: ios
   IOS_ARCH: arm64
@@ -47,12 +49,12 @@ vars:
 
   IOS_FRAMEWORK: "{{.SRC_DIR}}/build/Release-iphoneos/libtesseract.framework"
 
-  IOS_SIMULATOR_VERSION_MIN: ios-simulator-version-min=11.0
+  IOS_SIMULATOR_VERSION_MIN: ios-simulator-version-min=15.0
   IOS_SIMULATOR_PLATFORM_PREFIX: simulator
   IOS_SIMULATOR_SDK:
     sh: xcrun --sdk iphonesimulator --show-sdk-path
 
-  IOS_SIMULATOR_ARM_ARCH_NAME: arm-apple-darwin64
+  IOS_SIMULATOR_ARM_ARCH_NAME: "{{.IOS_ARCH_NAME}}-simulator"
   IOS_SIMULATOR_ARM_HOST: "{{.IOS_SIMULATOR_ARM_ARCH_NAME}}"
   IOS_SIMULATOR_ARM_ARCH: arm64
 
@@ -62,12 +64,12 @@ vars:
 
   IOS_SIMULATOR_FRAMEWORK: "{{.SRC_DIR}}/build/Release-iphonesimulator/libtesseract.framework"
 
-  MACOS_VERSION_MIN: macosx-version-min=10.13
+  MACOS_VERSION_MIN: macosx-version-min=14.0
   MACOS_PLATFORM_PREFIX: macos
   MACOS_SDK:
     sh: xcrun --sdk macosx --show-sdk-path
   
-  MACOS_ARM_ARCH_NAME: arm-apple-darwin64
+  MACOS_ARM_ARCH_NAME: aarch64-apple-darwin
   MACOS_ARM_ARCH: arm64
   MACOS_ARM_HOST: "{{.MACOS_ARM_ARCH_NAME}}"
 
@@ -77,14 +79,14 @@ vars:
 
   MACOS_FRAMEWORK: "{{.SRC_DIR}}/build/Release/libtesseract.framework"
 
-  CATALYST_VERSION_MIN: iphoneos-version-min=13.0
+  CATALYST_VERSION_MIN: iphoneos-version-min=15.0
   CATALYST_PLATFORM_PREFIX: catalyst
   CATALYST_SDK:
     sh: xcrun --sdk macosx --show-sdk-path
 
   CATALYST_ARM_ARCH_NAME: arm64-apple-ios-macabi
   CATALYST_ARM_ARCH: arm64
-  CATALYST_ARM_HOST: arm-apple-darwin64
+  CATALYST_ARM_HOST: aarch64-apple-darwin
 
   CATALYST_X86_ARCH_NAME: x86_64-apple-ios-macabi
   CATALYST_X86_ARCH: x86_64
@@ -337,8 +339,8 @@ tasks:
           PLATFORM_PREFIX: "{{.PLATFORM_PREFIX}}"
       - mkdir -p {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/{{.ARCH_NAME}}
       - mkdir -p {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/include
-      - cp {{.TESSERACT_SRC}}/{{.ARCH_NAME}}/lib/{{.TESSERACT_ARCHIVE}} {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/{{.ARCH_NAME}}
-      - cp -rvf {{.TESSERACT_SRC}}/{{.ARCH_NAME}}/include/tesseract/*.h {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/include
+      - cp {{.TESSERACT_SRC}}/{{.ARCH_NAME}}/out/lib/{{.TESSERACT_ARCHIVE}} {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/{{.ARCH_NAME}}
+      - cp -rvf {{.TESSERACT_SRC}}/{{.ARCH_NAME}}/out/include/tesseract/*.h {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/include
       - |
         libtool -static -o {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/{{.ARCH_NAME}}/combined.a \
           {{.SRC_DIR}}/{{.PLATFORM_PREFIX}}/{{.ARCH_NAME}}/{{.JPEG_ARCHIVE}} \
@@ -393,17 +395,25 @@ tasks:
         mkdir -p {{.TESSERACT_SRC}}/{{.ARCH_NAME}}
         cd {{.TESSERACT_SRC}}/{{.ARCH_NAME}}
         ln -s {{.LEPTONICA_SRC}}/src/ leptonica
-        ../configure --host={{.HOST}} --prefix=`pwd` --enable-shared=no --disable-graphics --disable-legacy --without-curl
+        ../configure \
+          --host={{.HOST}} \
+          --prefix={{.TESSERACT_SRC}}/{{.ARCH_NAME}}/out \
+          --enable-shared=no \
+          --disable-graphics \
+          --disable-legacy \
+          --without-curl
+        sed -i ".bak" "/lrt/d" Makefile
     status:
       - test -f {{.TESSERACT_SRC}}/{{.ARCH_NAME}}/Makefile
 
+  # cp {{.PATCH_DIR}}/config.sub.patched {{.TESSERACT_SRC}}/config/config.sub
   autogen-libtesseract:
     deps: [download-libtesseract]
     cmds:
       - |
         cd {{.TESSERACT_SRC}}
-        patch configure.ac ../patch/optional_libcurl.patch
         ./autogen.sh 2> /dev/null
+        patch config/config.sub {{.PATCH_DIR}}/erase_simulator.patch
     status:
       - test -f {{.TESSERACT_CONFIG}}
 
@@ -503,7 +513,9 @@ tasks:
 
   download-liblept:
     cmds:
-      - curl http://leptonica.org/source/{{.LEPTONICA_NAME}}.tar.gz | tar -xpf-
+      - |
+        curl http://leptonica.org/source/{{.LEPTONICA_NAME}}.tar.gz | tar -xpf-
+        cp {{.PATCH_DIR}}/config.sub.patched {{.LEPTONICA_SRC}}/config/config.sub
     status:
       - test -d {{.LEPTONICA_SRC}}
 
@@ -556,7 +568,9 @@ tasks:
 
   download-libpng:
     cmds:
-      - curl -L https://downloads.sourceforge.net/project/libpng/libpng16/{{.PNG_VERSION}}/{{.PNG_NAME}}.tar.gz | tar -xpf-
+      - |
+        curl -L https://downloads.sourceforge.net/project/libpng/libpng16/{{.PNG_VERSION}}/{{.PNG_NAME}}.tar.gz | tar -xpf-
+        cp {{.PATCH_DIR}}/config.sub.patched {{.PNG_SRC}}/config.sub
     status:
       - test -d {{.PNG_SRC}}
 
@@ -609,11 +623,14 @@ tasks:
 
   download-libjpeg:
     cmds:
-      - curl http://www.ijg.org/files/{{.JPEG_SRC_NAME}}.tar.gz | tar -xpf-
+      - |
+        curl http://www.ijg.org/files/{{.JPEG_SRC_NAME}}.tar.gz | tar -xpf-
+        cp {{.PATCH_DIR}}/config.sub.patched {{.JPEG_SRC}}/config.sub
     status:
       - test -d {{.JPEG_SRC}}
 
   install-libtiff:
+  
     cmds:
       - task: compile-libtiff
         vars:
@@ -647,6 +664,22 @@ tasks:
 
   configure-libtiff:
     deps: 
+      - task: install-libpng
+        vars:
+          SDK: "{{.SDK}}"
+          PLATFORM_VERSION_MIN: "{{.PLATFORM_VERSION_MIN}}"
+          ARCH: "{{.ARCH}}"
+          ARCH_NAME: "{{.ARCH_NAME}}"
+          HOST: "{{.HOST}}"
+          PLATFORM_PREFIX: "{{.PLATFORM_PREFIX}}"
+      - task: install-libjpeg
+        vars:
+          SDK: "{{.SDK}}"
+          PLATFORM_VERSION_MIN: "{{.PLATFORM_VERSION_MIN}}"
+          ARCH: "{{.ARCH}}"
+          ARCH_NAME: "{{.ARCH_NAME}}"
+          HOST: "{{.HOST}}"
+          PLATFORM_PREFIX: "{{.PLATFORM_PREFIX}}"
       - task: download-libtiff
     cmds:
       - |
@@ -663,6 +696,8 @@ tasks:
 
   download-libtiff:
     cmds:
-      - curl http://download.osgeo.org/libtiff/{{.TIFF_NAME}}.tar.gz | tar -xpf-
+      - |
+        curl http://download.osgeo.org/libtiff/{{.TIFF_NAME}}.tar.gz | tar -xpf-
+        cp {{.PATCH_DIR}}/config.sub.patched {{.TIFF_SRC}}/config/config.sub
     status:
       - test -d {{.TIFF_SRC}}

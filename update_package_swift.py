@@ -4,7 +4,7 @@ import textwrap
 
 def write_package_swift(version):
     libtesseract_zip = f"libtesseract-{version}.xcframework.zip"
-    download_url = f"https://github.com/SwiftyTesseract/libtesseract/releases/download/{version}/{libtesseract_zip}"
+    download_url = f"https://github.com/rodonisi/libtesseract/releases/download/{version}/{libtesseract_zip}"
     checksum_result = subprocess.run(["swift", "package", "compute-checksum", libtesseract_zip], stdout=subprocess.PIPE)
     checksum = checksum_result.stdout.decode("utf-8").strip("\n")
 
