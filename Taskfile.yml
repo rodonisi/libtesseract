@@ -4,7 +4,7 @@ vars:
   SRC_DIR:
     sh: pwd
   
-  PNG_VERSION: 1.6.37
+  PNG_VERSION: 1.6.40
   PNG_NAME: libpng-{{.PNG_VERSION}}
   PNG_SRC: "{{.SRC_DIR}}/{{.PNG_NAME}}"
   PNG_ARCHIVE: libpng.a
@@ -16,19 +16,19 @@ vars:
   JPEG_ARCHIVE: libjpeg.a
   JPEG_CONFIG: "{{.JPEG_SRC}}/configure"
 
-  TIFF_NAME: tiff-4.3.0
+  TIFF_NAME: tiff-4.6.0
   TIFF_SRC:  "{{.SRC_DIR}}/{{.TIFF_NAME}}"
   TIFF_ARCHIVE: libtiff.a
   TIFF_CONFIG: "{{.TIFF_SRC}}/configure"
 
-  TESSERACT_VERSION: 4.1.3
+  TESSERACT_VERSION: 5.3.3
   TESSERACT_NAME: tesseract-{{.TESSERACT_VERSION}}
   TESSERACT_SRC: "{{.SRC_DIR}}/{{.TESSERACT_NAME}}"
   TESSERACT_ARCHIVE: libtesseract.a
   TESSERACT_AUTOGEN: "{{.TESSERACT_SRC}}/autogen.sh"
   TESSERACT_CONFIG: "{{.TESSERACT_SRC}}/configure"
 
-  LEPTONICA_VERSION: 1.82.0
+  LEPTONICA_VERSION: 1.84.0
   LEPTONICA_NAME: leptonica-{{.LEPTONICA_VERSION}}
   LEPTONICA_SRC:  "{{.SRC_DIR}}/{{.LEPTONICA_NAME}}"
   LEPTONICA_ARCHIVE: liblept.a
