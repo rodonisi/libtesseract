@@ -2,8 +2,8 @@ name: Deliver
 
 on:
   push:
-    branches:
-      - 'release/**'
+    tags:
+      - '*'
 
 jobs:
   deliver:
@@ -11,10 +11,12 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'Do not upload')"
     steps:
       - uses: actions/checkout@v1
-      - name: Install automake, pkg-config, and task
-        run: brew install automake pkg-config go-task/tap/go-task
-      - name: Switch to Xcode 12.4
-        run: sudo xcode-select --switch /Applications/Xcode_12.4.app/Contents/Developer
+      - uses: actions/checkout@v1
+      - name: Install automake and pkg-config libtool
+        run: brew install automake pkg-config go-task/tap/go-task libtool
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
       - name: Assign Tag Number to RELEASE_VERSION environment variable
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/*/}" >> $GITHUB_ENV
       - name: Build libtesseract
