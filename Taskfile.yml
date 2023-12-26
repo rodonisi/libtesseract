@@ -459,6 +459,23 @@ tasks:
       - test -f {{.LEPTONICA_SRC}}/{{.ARCH_NAME}}/lib/{{.LEPTONICA_ARCHIVE}}
 
   configure-liblept:
+    deps: # These are set up as deps so they can be executed concurrently
+      - task: install-libpng
+        vars:
+          SDK: "{{.SDK}}"
+          PLATFORM_VERSION_MIN: "{{.PLATFORM_VERSION_MIN}}"
+          ARCH: "{{.ARCH}}"
+          ARCH_NAME: "{{.ARCH_NAME}}"
+          HOST: "{{.HOST}}"
+          PLATFORM_PREFIX: "{{.PLATFORM_PREFIX}}"
+      - task: install-libjpeg
+        vars:
+          SDK: "{{.SDK}}"
+          PLATFORM_VERSION_MIN: "{{.PLATFORM_VERSION_MIN}}"
+          ARCH: "{{.ARCH}}"
+          ARCH_NAME: "{{.ARCH_NAME}}"
+          HOST: "{{.HOST}}"
+          PLATFORM_PREFIX: "{{.PLATFORM_PREFIX}}"
     cmds:
       - task: install-libtiff
         vars:
