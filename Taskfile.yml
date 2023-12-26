@@ -459,7 +459,7 @@ tasks:
       - test -f {{.LEPTONICA_SRC}}/{{.ARCH_NAME}}/lib/{{.LEPTONICA_ARCHIVE}}
 
   configure-liblept:
-    deps:
+    cmd:
       - task: install-libtiff
         vars:
             SDK: "{{.SDK}}"
