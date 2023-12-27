@@ -34,11 +34,15 @@ jobs:
           message: 'Auto-updating Package.swift'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Create draft release
+      - name: Move tag to latest commit
+        run: |
+          git push origin :refs/tags/$RELEASE_VERSION
+          git tag -fa $RELEASE_VERSION 
+          git push --tags
+      - name: Create release
         uses: ncipollo/release-action@v1
         with:
           artifacts: "libtesseract-${{ env.RELEASE_VERSION }}.xcframework.zip"
-          draft: true
           allowUpdates: true
           tag: ${{ env.RELEASE_VERSION }}
           token: ${{ secrets.GITHUB_TOKEN }}
