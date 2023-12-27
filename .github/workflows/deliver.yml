@@ -11,14 +11,14 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'Do not upload')"
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/checkout@v1
       - name: Install automake and pkg-config libtool
         run: brew install automake pkg-config go-task/tap/go-task libtool
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
       - name: Assign Tag Number to RELEASE_VERSION environment variable
-        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/*/}" >> $GITHUB_ENV
+        run: echo "RELEASE_VERSION=${{  github.ref_name }}" >> $GITHUB_ENV
+        run: echo $GITHUB_ENV
       - name: Build libtesseract
         run: task build-tesseract-xcframework-zip
       - name: Update Package.swift
@@ -33,7 +33,7 @@ jobs:
       - name: Create draft release
         uses: ncipollo/release-action@v1
         with:
-          artifact: "libtesseract-${{ env.RELEASE_VERSION }}.xcframework.zip"
+          artifacts: "libtesseract-${{ env.RELEASE_VERSION }}.xcframework.zip"
           draft: true
           allowUpdates: true
           tag: ${{ env.RELEASE_VERSION }}
