@@ -17,8 +17,9 @@ jobs:
         with:
           xcode-version: latest-stable
       - name: Assign Tag Number to RELEASE_VERSION environment variable
-        run: echo "RELEASE_VERSION=${{  github.ref_name }}" >> $GITHUB_ENV
-        run: echo $GITHUB_ENV
+        run: |
+          echo "RELEASE_VERSION=${{  github.ref_name }}" >> $GITHUB_ENV
+          echo $GITHUB_ENV
       - name: Build libtesseract
         run: task build-tesseract-xcframework-zip
       - name: Update Package.swift
