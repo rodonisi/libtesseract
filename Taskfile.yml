@@ -116,12 +116,12 @@ tasks:
   build-tesseract-ios-xcframework-zip:
     cmds:
       - task: build-tesseract-ios-xcframework
-      - zip -r libtesseract-ios-{{.TESSERACT_VERSION}}.xcframework.zip libtesseract.xcframework
+      - zip -r libtesseract-ios.xcframework.zip libtesseract.xcframework
 
   build-tesseract-xcframework-zip:
     cmds:
       - task: build-tesseract-xcframework
-      - zip -r libtesseract-{{.TESSERACT_VERSION}}.xcframework.zip libtesseract.xcframework
+      - zip -r libtesseract.xcframework.zip libtesseract.xcframework
 
   build-tesseract-ios-xcframework:
       cmds:

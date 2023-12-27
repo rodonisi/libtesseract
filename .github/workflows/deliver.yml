@@ -19,7 +19,9 @@ jobs:
       - name: Assign Tag Number to RELEASE_VERSION environment variable
         run: echo "RELEASE_VERSION=${{  github.ref_name }}" >> $GITHUB_ENV
       - name: Build libtesseract
-        run: task build-tesseract-xcframework-zip
+        run: |
+          task build-tesseract-xcframework-zip
+          mv libtesseract.xcframework.zip libtesseract-${{ env.RELEASE_VERSION }}.xcframework.zip
       - name: Update Package.swift
         run: python3 update_package_swift.py --version $RELEASE_VERSION
       - name: Commit Package.swift update
