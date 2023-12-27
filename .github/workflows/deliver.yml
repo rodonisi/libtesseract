@@ -37,7 +37,7 @@ jobs:
       - name: Move tag to latest commit
         run: |
           git push origin :refs/tags/$RELEASE_VERSION
-          git tag -fa $RELEASE_VERSION 
+          git tag -f $RELEASE_VERSION 
           git push --tags
       - name: Create release
         uses: ncipollo/release-action@v1
