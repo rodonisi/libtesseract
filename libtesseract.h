@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <libtesseract/allheaders.h>
 #import <libtesseract/capi.h>
+#import <libtesseract/pix_internal.h>
+#import <libtesseract/ccbord_internal.h>
 
 //! Project version number for SwiftyTesseract.
 FOUNDATION_EXPORT double libtesseractVersionNumber;
