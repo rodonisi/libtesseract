@@ -27,112 +27,126 @@
 		62BA6ADC24AC53B20097319E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BA6ADB24AC53B20097319E /* libz.tbd */; };
 		62BA6AE124AC53CC0097319E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BA6ADD24AC53BB0097319E /* libz.tbd */; };
 		62BA6AE224AC53D30097319E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BA6ADF24AC53C40097319E /* libc++.tbd */; };
-		62BA6AF224AC6B570097319E /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF124AC6B570097319E /* capi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6AF424AC6B610097319E /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF324AC6B610097319E /* allheaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3024AC6C350097319E /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF524AC6C340097319E /* ocrclass.h */; };
-		62BA6B3224AC6C350097319E /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF724AC6C340097319E /* ccbord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3324AC6C350097319E /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF824AC6C340097319E /* pngconf.h */; };
-		62BA6B3424AC6C350097319E /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF924AC6C340097319E /* resultiterator.h */; };
-		62BA6B3524AC6C350097319E /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFA24AC6C340097319E /* jmorecfg.h */; };
-		62BA6B3624AC6C350097319E /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFB24AC6C340097319E /* regutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3724AC6C350097319E /* dewarp.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFC24AC6C340097319E /* dewarp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3824AC6C350097319E /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFD24AC6C340097319E /* pnglibconf.h */; };
-		62BA6B3A24AC6C360097319E /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFF24AC6C340097319E /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3B24AC6C360097319E /* tiffvers.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0024AC6C340097319E /* tiffvers.h */; };
-		62BA6B3C24AC6C360097319E /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0124AC6C340097319E /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3D24AC6C360097319E /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0224AC6C340097319E /* bbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B3E24AC6C360097319E /* tiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0324AC6C340097319E /* tiff.h */; };
-		62BA6B4024AC6C360097319E /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0524AC6C340097319E /* stringcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4124AC6C360097319E /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0624AC6C340097319E /* baseapi.h */; };
-		62BA6B4224AC6C360097319E /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0724AC6C340097319E /* arrayaccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4324AC6C360097319E /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0824AC6C340097319E /* pageiterator.h */; };
-		62BA6B4424AC6C360097319E /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0924AC6C340097319E /* watershed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4524AC6C360097319E /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0A24AC6C340097319E /* osdetect.h */; };
-		62BA6B4624AC6C360097319E /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0B24AC6C340097319E /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4724AC6C360097319E /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0C24AC6C340097319E /* gplot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4824AC6C360097319E /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0D24AC6C340097319E /* jerror.h */; };
-		62BA6B4A24AC6C360097319E /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0F24AC6C340097319E /* pix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4B24AC6C360097319E /* tiffio.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1024AC6C340097319E /* tiffio.h */; };
-		62BA6B4C24AC6C360097319E /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1124AC6C340097319E /* endianness.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B4D24AC6C360097319E /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1224AC6C340097319E /* bmfdata.h */; };
-		62BA6B4F24AC6C360097319E /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1424AC6C340097319E /* jbclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5024AC6C360097319E /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1524AC6C340097319E /* imageio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5124AC6C360097319E /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1624AC6C340097319E /* readbarcode.h */; };
-		62BA6B5224AC6C370097319E /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1724AC6C340097319E /* bilateral.h */; };
-		62BA6B5324AC6C370097319E /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1824AC6C350097319E /* sudoku.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5524AC6C370097319E /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1A24AC6C350097319E /* unichar.h */; };
-		62BA6B5624AC6C370097319E /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1B24AC6C350097319E /* alltypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5724AC6C370097319E /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1C24AC6C350097319E /* jpeglib.h */; };
-		62BA6B5824AC6C370097319E /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1D24AC6C350097319E /* tiffconf.h */; };
-		62BA6B5924AC6C370097319E /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1E24AC6C350097319E /* png.h */; };
-		62BA6B5A24AC6C370097319E /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1F24AC6C350097319E /* publictypes.h */; };
-		62BA6B5B24AC6C370097319E /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2024AC6C350097319E /* bmp.h */; };
-		62BA6B5C24AC6C370097319E /* rbtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2124AC6C350097319E /* rbtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5D24AC6C370097319E /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2224AC6C350097319E /* environ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5E24AC6C370097319E /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2324AC6C350097319E /* ptra.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B5F24AC6C370097319E /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2424AC6C350097319E /* recog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B6024AC6C370097319E /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2524AC6C350097319E /* jconfig.h */; };
-		62BA6B6224AC6C370097319E /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2724AC6C350097319E /* leptwin.h */; };
-		62BA6B6424AC6C370097319E /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2924AC6C350097319E /* ltrresultiterator.h */; };
-		62BA6B6524AC6C370097319E /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2A24AC6C350097319E /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B6624AC6C370097319E /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2B24AC6C350097319E /* array.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B6724AC6C370097319E /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2C24AC6C350097319E /* bmf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6B6824AC6C370097319E /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2D24AC6C350097319E /* renderer.h */; };
-		62BA6B6A24AC6C380097319E /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2F24AC6C350097319E /* morph.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BA824AC700D0097319E /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2A24AC6C350097319E /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BAA24AC700D0097319E /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2224AC6C350097319E /* environ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BAB24AC700D0097319E /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1724AC6C340097319E /* bilateral.h */; };
-		62BA6BAC24AC700D0097319E /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0A24AC6C340097319E /* osdetect.h */; };
-		62BA6BAE24AC700D0097319E /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF724AC6C340097319E /* ccbord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BAF24AC700D0097319E /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1524AC6C340097319E /* imageio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BB024AC700E0097319E /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2D24AC6C350097319E /* renderer.h */; };
-		62BA6BB224AC700E0097319E /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1E24AC6C350097319E /* png.h */; };
-		62BA6BB324AC700E0097319E /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0724AC6C340097319E /* arrayaccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BB424AC700E0097319E /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF824AC6C340097319E /* pngconf.h */; };
-		62BA6BB524AC700E0097319E /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2C24AC6C350097319E /* bmf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BB624AC700E0097319E /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1C24AC6C350097319E /* jpeglib.h */; };
-		62BA6BB724AC700E0097319E /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2B24AC6C350097319E /* array.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BB824AC700E0097319E /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFA24AC6C340097319E /* jmorecfg.h */; };
-		62BA6BB924AC700E0097319E /* rbtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2124AC6C350097319E /* rbtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BBA24AC700E0097319E /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1B24AC6C350097319E /* alltypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BBB24AC700E0097319E /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1224AC6C340097319E /* bmfdata.h */; };
-		62BA6BBD24AC700E0097319E /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0C24AC6C340097319E /* gplot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BBE24AC700F0097319E /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFD24AC6C340097319E /* pnglibconf.h */; };
-		62BA6BBF24AC700F0097319E /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2424AC6C350097319E /* recog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BC024AC700F0097319E /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2724AC6C350097319E /* leptwin.h */; };
-		62BA6BC124AC700F0097319E /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF124AC6B570097319E /* capi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BC224AC700F0097319E /* tiffio.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1024AC6C340097319E /* tiffio.h */; };
-		62BA6BC324AC700F0097319E /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0124AC6C340097319E /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BC424AC700F0097319E /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF924AC6C340097319E /* resultiterator.h */; };
-		62BA6BC524AC700F0097319E /* tiffvers.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0024AC6C340097319E /* tiffvers.h */; };
-		62BA6BC624AC700F0097319E /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1F24AC6C350097319E /* publictypes.h */; };
-		62BA6BC724AC700F0097319E /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0224AC6C340097319E /* bbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BC824AC700F0097319E /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFB24AC6C340097319E /* regutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BC924AC700F0097319E /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFF24AC6C340097319E /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BCA24AC700F0097319E /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0924AC6C340097319E /* watershed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BCC24AC70100097319E /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1A24AC6C350097319E /* unichar.h */; };
-		62BA6BCE24AC70100097319E /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2924AC6C350097319E /* ltrresultiterator.h */; };
-		62BA6BCF24AC70100097319E /* dewarp.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AFC24AC6C340097319E /* dewarp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BD024AC70100097319E /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2524AC6C350097319E /* jconfig.h */; };
-		62BA6BD124AC70100097319E /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1124AC6C340097319E /* endianness.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BD224AC70100097319E /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0624AC6C340097319E /* baseapi.h */; };
-		62BA6BD324AC70100097319E /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0D24AC6C340097319E /* jerror.h */; };
-		62BA6BD524AC70100097319E /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1424AC6C340097319E /* jbclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BD624AC70100097319E /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1824AC6C350097319E /* sudoku.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BD724AC70100097319E /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1624AC6C340097319E /* readbarcode.h */; };
-		62BA6BD924AC70110097319E /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2324AC6C350097319E /* ptra.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BDA24AC70110097319E /* tiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0324AC6C340097319E /* tiff.h */; };
-		62BA6BDB24AC70110097319E /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0824AC6C340097319E /* pageiterator.h */; };
-		62BA6BDC24AC70110097319E /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2024AC6C350097319E /* bmp.h */; };
-		62BA6BDD24AC70110097319E /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B2F24AC6C350097319E /* morph.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BDE24AC70110097319E /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF324AC6B610097319E /* allheaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BDF24AC70110097319E /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B1D24AC6C350097319E /* tiffconf.h */; };
-		62BA6BE024AC70110097319E /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6AF524AC6C340097319E /* ocrclass.h */; };
-		62BA6BE124AC70110097319E /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0F24AC6C340097319E /* pix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BE324AC70110097319E /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0524AC6C340097319E /* stringcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BA6BE424AC70110097319E /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6B0B24AC6C340097319E /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62BA6BE924AC77DB0097319E /* libtesseract.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6BE824AC77DB0097319E /* libtesseract.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62BA6BEB24AC77DB0097319E /* libtesseract.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BA6BE824AC77DB0097319E /* libtesseract.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE642B3E2CB800D49930 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE282B3E2CB700D49930 /* pnglibconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE652B3E2CB800D49930 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE282B3E2CB700D49930 /* pnglibconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE662B3E2CB800D49930 /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE292B3E2CB700D49930 /* ccbord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE672B3E2CB800D49930 /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE292B3E2CB700D49930 /* ccbord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE682B3E2CB800D49930 /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2A2B3E2CB700D49930 /* sudoku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE692B3E2CB800D49930 /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2A2B3E2CB700D49930 /* sudoku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE6C2B3E2CB800D49930 /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2C2B3E2CB700D49930 /* renderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE6D2B3E2CB800D49930 /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2C2B3E2CB700D49930 /* renderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE6E2B3E2CB800D49930 /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2D2B3E2CB700D49930 /* readbarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE6F2B3E2CB800D49930 /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2D2B3E2CB700D49930 /* readbarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE702B3E2CB800D49930 /* rbtree.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2E2B3E2CB700D49930 /* rbtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE712B3E2CB800D49930 /* rbtree.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2E2B3E2CB700D49930 /* rbtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE722B3E2CB800D49930 /* dewarp.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2F2B3E2CB700D49930 /* dewarp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE732B3E2CB800D49930 /* dewarp.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE2F2B3E2CB700D49930 /* dewarp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE742B3E2CB800D49930 /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE302B3E2CB700D49930 /* bmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE752B3E2CB800D49930 /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE302B3E2CB700D49930 /* bmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE762B3E2CB800D49930 /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE312B3E2CB700D49930 /* environ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE772B3E2CB800D49930 /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE312B3E2CB700D49930 /* environ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE782B3E2CB800D49930 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE322B3E2CB700D49930 /* png.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE792B3E2CB800D49930 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE322B3E2CB700D49930 /* png.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE7A2B3E2CB800D49930 /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE332B3E2CB700D49930 /* gplot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE7B2B3E2CB800D49930 /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE332B3E2CB700D49930 /* gplot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE7C2B3E2CB800D49930 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE342B3E2CB700D49930 /* endianness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE7D2B3E2CB800D49930 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE342B3E2CB700D49930 /* endianness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE7E2B3E2CB800D49930 /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE352B3E2CB700D49930 /* imageio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE7F2B3E2CB800D49930 /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE352B3E2CB700D49930 /* imageio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE802B3E2CB800D49930 /* tiffvers.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE362B3E2CB700D49930 /* tiffvers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE812B3E2CB800D49930 /* tiffvers.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE362B3E2CB700D49930 /* tiffvers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE822B3E2CB800D49930 /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE372B3E2CB700D49930 /* bmfdata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE832B3E2CB800D49930 /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE372B3E2CB700D49930 /* bmfdata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE842B3E2CB800D49930 /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE382B3E2CB700D49930 /* ocrclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE852B3E2CB800D49930 /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE382B3E2CB700D49930 /* ocrclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE862B3E2CB800D49930 /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE392B3E2CB700D49930 /* jconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE872B3E2CB800D49930 /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE392B3E2CB700D49930 /* jconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE882B3E2CB800D49930 /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3A2B3E2CB700D49930 /* ptra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE892B3E2CB800D49930 /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3A2B3E2CB700D49930 /* ptra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE8A2B3E2CB800D49930 /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3B2B3E2CB700D49930 /* watershed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE8B2B3E2CB800D49930 /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3B2B3E2CB700D49930 /* watershed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE8C2B3E2CB800D49930 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3C2B3E2CB700D49930 /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE8D2B3E2CB800D49930 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3C2B3E2CB700D49930 /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE8E2B3E2CB800D49930 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3D2B3E2CB700D49930 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE8F2B3E2CB800D49930 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3D2B3E2CB700D49930 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE902B3E2CB800D49930 /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3E2B3E2CB700D49930 /* array.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE912B3E2CB800D49930 /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3E2B3E2CB700D49930 /* array.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE922B3E2CB800D49930 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3F2B3E2CB700D49930 /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE932B3E2CB800D49930 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE3F2B3E2CB700D49930 /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE942B3E2CB800D49930 /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE402B3E2CB700D49930 /* pageiterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE952B3E2CB800D49930 /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE402B3E2CB700D49930 /* pageiterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE962B3E2CB800D49930 /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE412B3E2CB700D49930 /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE972B3E2CB800D49930 /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE412B3E2CB700D49930 /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE982B3E2CB800D49930 /* tiffio.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE422B3E2CB700D49930 /* tiffio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE992B3E2CB800D49930 /* tiffio.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE422B3E2CB700D49930 /* tiffio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE9A2B3E2CB800D49930 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE432B3E2CB700D49930 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE9B2B3E2CB800D49930 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE432B3E2CB700D49930 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE9C2B3E2CB800D49930 /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE442B3E2CB700D49930 /* pix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE9D2B3E2CB800D49930 /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE442B3E2CB700D49930 /* pix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE9E2B3E2CB800D49930 /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE452B3E2CB700D49930 /* tiffconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEE9F2B3E2CB800D49930 /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE452B3E2CB700D49930 /* tiffconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA02B3E2CB800D49930 /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE462B3E2CB700D49930 /* ltrresultiterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA12B3E2CB800D49930 /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE462B3E2CB700D49930 /* ltrresultiterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA22B3E2CB800D49930 /* hashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE472B3E2CB700D49930 /* hashmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA32B3E2CB800D49930 /* hashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE472B3E2CB700D49930 /* hashmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA42B3E2CB800D49930 /* pix_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE482B3E2CB700D49930 /* pix_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA52B3E2CB800D49930 /* pix_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE482B3E2CB700D49930 /* pix_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA62B3E2CB800D49930 /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE492B3E2CB700D49930 /* regutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA72B3E2CB800D49930 /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE492B3E2CB700D49930 /* regutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA82B3E2CB800D49930 /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4A2B3E2CB700D49930 /* alltypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEA92B3E2CB800D49930 /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4A2B3E2CB700D49930 /* alltypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEAA2B3E2CB800D49930 /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4B2B3E2CB700D49930 /* jpeglib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEAB2B3E2CB800D49930 /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4B2B3E2CB700D49930 /* jpeglib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEAC2B3E2CB800D49930 /* array_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4C2B3E2CB700D49930 /* array_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEAD2B3E2CB800D49930 /* array_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4C2B3E2CB700D49930 /* array_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEAE2B3E2CB800D49930 /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4D2B3E2CB700D49930 /* arrayaccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEAF2B3E2CB800D49930 /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4D2B3E2CB700D49930 /* arrayaccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB02B3E2CB800D49930 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4E2B3E2CB700D49930 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB12B3E2CB800D49930 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4E2B3E2CB700D49930 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB22B3E2CB800D49930 /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4F2B3E2CB700D49930 /* resultiterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB32B3E2CB800D49930 /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE4F2B3E2CB700D49930 /* resultiterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB42B3E2CB800D49930 /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE502B3E2CB700D49930 /* bilateral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB52B3E2CB800D49930 /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE502B3E2CB700D49930 /* bilateral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB62B3E2CB800D49930 /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE512B3E2CB700D49930 /* unichar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB72B3E2CB800D49930 /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE512B3E2CB700D49930 /* unichar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB82B3E2CB800D49930 /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE522B3E2CB700D49930 /* jbclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEB92B3E2CB800D49930 /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE522B3E2CB700D49930 /* jbclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEBA2B3E2CB800D49930 /* colorfill.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE532B3E2CB700D49930 /* colorfill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEBB2B3E2CB800D49930 /* colorfill.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE532B3E2CB700D49930 /* colorfill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEBC2B3E2CB800D49930 /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE542B3E2CB700D49930 /* jerror.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEBD2B3E2CB800D49930 /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE542B3E2CB700D49930 /* jerror.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEBE2B3E2CB800D49930 /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE552B3E2CB800D49930 /* allheaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEBF2B3E2CB800D49930 /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE552B3E2CB800D49930 /* allheaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC02B3E2CB800D49930 /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE562B3E2CB800D49930 /* stringcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC12B3E2CB800D49930 /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE562B3E2CB800D49930 /* stringcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC22B3E2CB800D49930 /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE572B3E2CB800D49930 /* baseapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC32B3E2CB800D49930 /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE572B3E2CB800D49930 /* baseapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC42B3E2CB800D49930 /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE582B3E2CB800D49930 /* publictypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC52B3E2CB800D49930 /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE582B3E2CB800D49930 /* publictypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC62B3E2CB800D49930 /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE592B3E2CB800D49930 /* pngconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC72B3E2CB800D49930 /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE592B3E2CB800D49930 /* pngconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC82B3E2CB800D49930 /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5A2B3E2CB800D49930 /* recog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEC92B3E2CB800D49930 /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5A2B3E2CB800D49930 /* recog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEECA2B3E2CB800D49930 /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5B2B3E2CB800D49930 /* morph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEECB2B3E2CB800D49930 /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5B2B3E2CB800D49930 /* morph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEECC2B3E2CB800D49930 /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5C2B3E2CB800D49930 /* leptwin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEECD2B3E2CB800D49930 /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5C2B3E2CB800D49930 /* leptwin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEECE2B3E2CB800D49930 /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5D2B3E2CB800D49930 /* capi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEECF2B3E2CB800D49930 /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5D2B3E2CB800D49930 /* capi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED02B3E2CB800D49930 /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5E2B3E2CB800D49930 /* bbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED12B3E2CB800D49930 /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5E2B3E2CB800D49930 /* bbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED22B3E2CB800D49930 /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5F2B3E2CB800D49930 /* osdetect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED32B3E2CB800D49930 /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE5F2B3E2CB800D49930 /* osdetect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED42B3E2CB800D49930 /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE602B3E2CB800D49930 /* bmf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED52B3E2CB800D49930 /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE602B3E2CB800D49930 /* bmf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED62B3E2CB800D49930 /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE612B3E2CB800D49930 /* jmorecfg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED72B3E2CB800D49930 /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE612B3E2CB800D49930 /* jmorecfg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED82B3E2CB800D49930 /* ccbord_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE622B3E2CB800D49930 /* ccbord_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEED92B3E2CB800D49930 /* ccbord_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE622B3E2CB800D49930 /* ccbord_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEDA2B3E2CB800D49930 /* tiff.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE632B3E2CB800D49930 /* tiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F47BEEDB2B3E2CB800D49930 /* tiff.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BEE632B3E2CB800D49930 /* tiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,59 +158,66 @@
 		62BA6ADD24AC53BB0097319E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		62BA6ADF24AC53C40097319E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		62BA6AE324AC5AF20097319E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62BA6AF124AC6B570097319E /* capi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = capi.h; sourceTree = "<group>"; };
-		62BA6AF324AC6B610097319E /* allheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allheaders.h; sourceTree = "<group>"; };
-		62BA6AF524AC6C340097319E /* ocrclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocrclass.h; sourceTree = "<group>"; };
-		62BA6AF724AC6C340097319E /* ccbord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccbord.h; sourceTree = "<group>"; };
-		62BA6AF824AC6C340097319E /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
-		62BA6AF924AC6C340097319E /* resultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultiterator.h; sourceTree = "<group>"; };
-		62BA6AFA24AC6C340097319E /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
-		62BA6AFB24AC6C340097319E /* regutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regutils.h; sourceTree = "<group>"; };
-		62BA6AFC24AC6C340097319E /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
-		62BA6AFD24AC6C340097319E /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
-		62BA6AFF24AC6C340097319E /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
-		62BA6B0024AC6C340097319E /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
-		62BA6B0124AC6C340097319E /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
-		62BA6B0224AC6C340097319E /* bbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bbuffer.h; sourceTree = "<group>"; };
-		62BA6B0324AC6C340097319E /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
-		62BA6B0524AC6C340097319E /* stringcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringcode.h; sourceTree = "<group>"; };
-		62BA6B0624AC6C340097319E /* baseapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseapi.h; sourceTree = "<group>"; };
-		62BA6B0724AC6C340097319E /* arrayaccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayaccess.h; sourceTree = "<group>"; };
-		62BA6B0824AC6C340097319E /* pageiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pageiterator.h; sourceTree = "<group>"; };
-		62BA6B0924AC6C340097319E /* watershed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watershed.h; sourceTree = "<group>"; };
-		62BA6B0A24AC6C340097319E /* osdetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdetect.h; sourceTree = "<group>"; };
-		62BA6B0B24AC6C340097319E /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
-		62BA6B0C24AC6C340097319E /* gplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gplot.h; sourceTree = "<group>"; };
-		62BA6B0D24AC6C340097319E /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
-		62BA6B0F24AC6C340097319E /* pix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pix.h; sourceTree = "<group>"; };
-		62BA6B1024AC6C340097319E /* tiffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffio.h; sourceTree = "<group>"; };
-		62BA6B1124AC6C340097319E /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
-		62BA6B1224AC6C340097319E /* bmfdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmfdata.h; sourceTree = "<group>"; };
-		62BA6B1424AC6C340097319E /* jbclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jbclass.h; sourceTree = "<group>"; };
-		62BA6B1524AC6C340097319E /* imageio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageio.h; sourceTree = "<group>"; };
-		62BA6B1624AC6C340097319E /* readbarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readbarcode.h; sourceTree = "<group>"; };
-		62BA6B1724AC6C340097319E /* bilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bilateral.h; sourceTree = "<group>"; };
-		62BA6B1824AC6C350097319E /* sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudoku.h; sourceTree = "<group>"; };
-		62BA6B1A24AC6C350097319E /* unichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unichar.h; sourceTree = "<group>"; };
-		62BA6B1B24AC6C350097319E /* alltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alltypes.h; sourceTree = "<group>"; };
-		62BA6B1C24AC6C350097319E /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
-		62BA6B1D24AC6C350097319E /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
-		62BA6B1E24AC6C350097319E /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
-		62BA6B1F24AC6C350097319E /* publictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publictypes.h; sourceTree = "<group>"; };
-		62BA6B2024AC6C350097319E /* bmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmp.h; sourceTree = "<group>"; };
-		62BA6B2124AC6C350097319E /* rbtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rbtree.h; sourceTree = "<group>"; };
-		62BA6B2224AC6C350097319E /* environ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = environ.h; sourceTree = "<group>"; };
-		62BA6B2324AC6C350097319E /* ptra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptra.h; sourceTree = "<group>"; };
-		62BA6B2424AC6C350097319E /* recog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recog.h; sourceTree = "<group>"; };
-		62BA6B2524AC6C350097319E /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
-		62BA6B2724AC6C350097319E /* leptwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leptwin.h; sourceTree = "<group>"; };
-		62BA6B2924AC6C350097319E /* ltrresultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltrresultiterator.h; sourceTree = "<group>"; };
-		62BA6B2A24AC6C350097319E /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
-		62BA6B2B24AC6C350097319E /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
-		62BA6B2C24AC6C350097319E /* bmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmf.h; sourceTree = "<group>"; };
-		62BA6B2D24AC6C350097319E /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
-		62BA6B2F24AC6C350097319E /* morph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = morph.h; sourceTree = "<group>"; };
 		62BA6BE824AC77DB0097319E /* libtesseract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtesseract.h; sourceTree = "<group>"; };
+		F47BEE282B3E2CB700D49930 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		F47BEE292B3E2CB700D49930 /* ccbord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccbord.h; sourceTree = "<group>"; };
+		F47BEE2A2B3E2CB700D49930 /* sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudoku.h; sourceTree = "<group>"; };
+		F47BEE2C2B3E2CB700D49930 /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
+		F47BEE2D2B3E2CB700D49930 /* readbarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readbarcode.h; sourceTree = "<group>"; };
+		F47BEE2E2B3E2CB700D49930 /* rbtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rbtree.h; sourceTree = "<group>"; };
+		F47BEE2F2B3E2CB700D49930 /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
+		F47BEE302B3E2CB700D49930 /* bmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmp.h; sourceTree = "<group>"; };
+		F47BEE312B3E2CB700D49930 /* environ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = environ.h; sourceTree = "<group>"; };
+		F47BEE322B3E2CB700D49930 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		F47BEE332B3E2CB700D49930 /* gplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gplot.h; sourceTree = "<group>"; };
+		F47BEE342B3E2CB700D49930 /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		F47BEE352B3E2CB700D49930 /* imageio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageio.h; sourceTree = "<group>"; };
+		F47BEE362B3E2CB700D49930 /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
+		F47BEE372B3E2CB700D49930 /* bmfdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmfdata.h; sourceTree = "<group>"; };
+		F47BEE382B3E2CB700D49930 /* ocrclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocrclass.h; sourceTree = "<group>"; };
+		F47BEE392B3E2CB700D49930 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		F47BEE3A2B3E2CB700D49930 /* ptra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptra.h; sourceTree = "<group>"; };
+		F47BEE3B2B3E2CB700D49930 /* watershed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watershed.h; sourceTree = "<group>"; };
+		F47BEE3C2B3E2CB700D49930 /* export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
+		F47BEE3D2B3E2CB700D49930 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		F47BEE3E2B3E2CB700D49930 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		F47BEE3F2B3E2CB700D49930 /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		F47BEE402B3E2CB700D49930 /* pageiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pageiterator.h; sourceTree = "<group>"; };
+		F47BEE412B3E2CB700D49930 /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		F47BEE422B3E2CB700D49930 /* tiffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffio.h; sourceTree = "<group>"; };
+		F47BEE432B3E2CB700D49930 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		F47BEE442B3E2CB700D49930 /* pix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pix.h; sourceTree = "<group>"; };
+		F47BEE452B3E2CB700D49930 /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
+		F47BEE462B3E2CB700D49930 /* ltrresultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltrresultiterator.h; sourceTree = "<group>"; };
+		F47BEE472B3E2CB700D49930 /* hashmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashmap.h; sourceTree = "<group>"; };
+		F47BEE482B3E2CB700D49930 /* pix_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pix_internal.h; sourceTree = "<group>"; };
+		F47BEE492B3E2CB700D49930 /* regutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regutils.h; sourceTree = "<group>"; };
+		F47BEE4A2B3E2CB700D49930 /* alltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alltypes.h; sourceTree = "<group>"; };
+		F47BEE4B2B3E2CB700D49930 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		F47BEE4C2B3E2CB700D49930 /* array_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array_internal.h; sourceTree = "<group>"; };
+		F47BEE4D2B3E2CB700D49930 /* arrayaccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayaccess.h; sourceTree = "<group>"; };
+		F47BEE4E2B3E2CB700D49930 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		F47BEE4F2B3E2CB700D49930 /* resultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultiterator.h; sourceTree = "<group>"; };
+		F47BEE502B3E2CB700D49930 /* bilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bilateral.h; sourceTree = "<group>"; };
+		F47BEE512B3E2CB700D49930 /* unichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unichar.h; sourceTree = "<group>"; };
+		F47BEE522B3E2CB700D49930 /* jbclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jbclass.h; sourceTree = "<group>"; };
+		F47BEE532B3E2CB700D49930 /* colorfill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorfill.h; sourceTree = "<group>"; };
+		F47BEE542B3E2CB700D49930 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		F47BEE552B3E2CB800D49930 /* allheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allheaders.h; sourceTree = "<group>"; };
+		F47BEE562B3E2CB800D49930 /* stringcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringcode.h; sourceTree = "<group>"; };
+		F47BEE572B3E2CB800D49930 /* baseapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseapi.h; sourceTree = "<group>"; };
+		F47BEE582B3E2CB800D49930 /* publictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publictypes.h; sourceTree = "<group>"; };
+		F47BEE592B3E2CB800D49930 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		F47BEE5A2B3E2CB800D49930 /* recog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recog.h; sourceTree = "<group>"; };
+		F47BEE5B2B3E2CB800D49930 /* morph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = morph.h; sourceTree = "<group>"; };
+		F47BEE5C2B3E2CB800D49930 /* leptwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leptwin.h; sourceTree = "<group>"; };
+		F47BEE5D2B3E2CB800D49930 /* capi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = capi.h; sourceTree = "<group>"; };
+		F47BEE5E2B3E2CB800D49930 /* bbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bbuffer.h; sourceTree = "<group>"; };
+		F47BEE5F2B3E2CB800D49930 /* osdetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdetect.h; sourceTree = "<group>"; };
+		F47BEE602B3E2CB800D49930 /* bmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmf.h; sourceTree = "<group>"; };
+		F47BEE612B3E2CB800D49930 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		F47BEE622B3E2CB800D49930 /* ccbord_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccbord_internal.h; sourceTree = "<group>"; };
+		F47BEE632B3E2CB800D49930 /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,58 +259,65 @@
 		62BA6A8C24AC495C0097319E /* include */ = {
 			isa = PBXGroup;
 			children = (
-				62BA6B1B24AC6C350097319E /* alltypes.h */,
-				62BA6B2B24AC6C350097319E /* array.h */,
-				62BA6B0724AC6C340097319E /* arrayaccess.h */,
-				62BA6B0624AC6C340097319E /* baseapi.h */,
-				62BA6B0224AC6C340097319E /* bbuffer.h */,
-				62BA6B1724AC6C340097319E /* bilateral.h */,
-				62BA6B2C24AC6C350097319E /* bmf.h */,
-				62BA6B1224AC6C340097319E /* bmfdata.h */,
-				62BA6B2024AC6C350097319E /* bmp.h */,
-				62BA6AF724AC6C340097319E /* ccbord.h */,
-				62BA6AFC24AC6C340097319E /* dewarp.h */,
-				62BA6B1124AC6C340097319E /* endianness.h */,
-				62BA6B2224AC6C350097319E /* environ.h */,
-				62BA6B0C24AC6C340097319E /* gplot.h */,
-				62BA6B0124AC6C340097319E /* heap.h */,
-				62BA6B1524AC6C340097319E /* imageio.h */,
-				62BA6B1424AC6C340097319E /* jbclass.h */,
-				62BA6B2524AC6C350097319E /* jconfig.h */,
-				62BA6B0D24AC6C340097319E /* jerror.h */,
-				62BA6AFA24AC6C340097319E /* jmorecfg.h */,
-				62BA6B1C24AC6C350097319E /* jpeglib.h */,
-				62BA6B2724AC6C350097319E /* leptwin.h */,
-				62BA6B0B24AC6C340097319E /* list.h */,
-				62BA6B2924AC6C350097319E /* ltrresultiterator.h */,
-				62BA6B2F24AC6C350097319E /* morph.h */,
-				62BA6AF524AC6C340097319E /* ocrclass.h */,
-				62BA6B0A24AC6C340097319E /* osdetect.h */,
-				62BA6B0824AC6C340097319E /* pageiterator.h */,
-				62BA6B0F24AC6C340097319E /* pix.h */,
-				62BA6B1E24AC6C350097319E /* png.h */,
-				62BA6AF824AC6C340097319E /* pngconf.h */,
-				62BA6AFD24AC6C340097319E /* pnglibconf.h */,
-				62BA6B2324AC6C350097319E /* ptra.h */,
-				62BA6B1F24AC6C350097319E /* publictypes.h */,
-				62BA6AFF24AC6C340097319E /* queue.h */,
-				62BA6B2124AC6C350097319E /* rbtree.h */,
-				62BA6B1624AC6C340097319E /* readbarcode.h */,
-				62BA6B2424AC6C350097319E /* recog.h */,
-				62BA6AFB24AC6C340097319E /* regutils.h */,
-				62BA6B2D24AC6C350097319E /* renderer.h */,
-				62BA6AF924AC6C340097319E /* resultiterator.h */,
-				62BA6B2A24AC6C350097319E /* stack.h */,
-				62BA6B0524AC6C340097319E /* stringcode.h */,
-				62BA6B1824AC6C350097319E /* sudoku.h */,
-				62BA6B0324AC6C340097319E /* tiff.h */,
-				62BA6B1D24AC6C350097319E /* tiffconf.h */,
-				62BA6B1024AC6C340097319E /* tiffio.h */,
-				62BA6B0024AC6C340097319E /* tiffvers.h */,
-				62BA6B1A24AC6C350097319E /* unichar.h */,
-				62BA6B0924AC6C340097319E /* watershed.h */,
-				62BA6AF124AC6B570097319E /* capi.h */,
-				62BA6AF324AC6B610097319E /* allheaders.h */,
+				F47BEE552B3E2CB800D49930 /* allheaders.h */,
+				F47BEE4A2B3E2CB700D49930 /* alltypes.h */,
+				F47BEE4C2B3E2CB700D49930 /* array_internal.h */,
+				F47BEE3E2B3E2CB700D49930 /* array.h */,
+				F47BEE4D2B3E2CB700D49930 /* arrayaccess.h */,
+				F47BEE572B3E2CB800D49930 /* baseapi.h */,
+				F47BEE5E2B3E2CB800D49930 /* bbuffer.h */,
+				F47BEE502B3E2CB700D49930 /* bilateral.h */,
+				F47BEE602B3E2CB800D49930 /* bmf.h */,
+				F47BEE372B3E2CB700D49930 /* bmfdata.h */,
+				F47BEE302B3E2CB700D49930 /* bmp.h */,
+				F47BEE5D2B3E2CB800D49930 /* capi.h */,
+				F47BEE622B3E2CB800D49930 /* ccbord_internal.h */,
+				F47BEE292B3E2CB700D49930 /* ccbord.h */,
+				F47BEE532B3E2CB700D49930 /* colorfill.h */,
+				F47BEE2F2B3E2CB700D49930 /* dewarp.h */,
+				F47BEE342B3E2CB700D49930 /* endianness.h */,
+				F47BEE312B3E2CB700D49930 /* environ.h */,
+				F47BEE3C2B3E2CB700D49930 /* export.h */,
+				F47BEE332B3E2CB700D49930 /* gplot.h */,
+				F47BEE472B3E2CB700D49930 /* hashmap.h */,
+				F47BEE412B3E2CB700D49930 /* heap.h */,
+				F47BEE352B3E2CB700D49930 /* imageio.h */,
+				F47BEE522B3E2CB700D49930 /* jbclass.h */,
+				F47BEE392B3E2CB700D49930 /* jconfig.h */,
+				F47BEE542B3E2CB700D49930 /* jerror.h */,
+				F47BEE612B3E2CB800D49930 /* jmorecfg.h */,
+				F47BEE4B2B3E2CB700D49930 /* jpeglib.h */,
+				F47BEE5C2B3E2CB800D49930 /* leptwin.h */,
+				F47BEE3D2B3E2CB700D49930 /* list.h */,
+				F47BEE462B3E2CB700D49930 /* ltrresultiterator.h */,
+				F47BEE5B2B3E2CB800D49930 /* morph.h */,
+				F47BEE382B3E2CB700D49930 /* ocrclass.h */,
+				F47BEE5F2B3E2CB800D49930 /* osdetect.h */,
+				F47BEE402B3E2CB700D49930 /* pageiterator.h */,
+				F47BEE482B3E2CB700D49930 /* pix_internal.h */,
+				F47BEE442B3E2CB700D49930 /* pix.h */,
+				F47BEE322B3E2CB700D49930 /* png.h */,
+				F47BEE592B3E2CB800D49930 /* pngconf.h */,
+				F47BEE282B3E2CB700D49930 /* pnglibconf.h */,
+				F47BEE3A2B3E2CB700D49930 /* ptra.h */,
+				F47BEE582B3E2CB800D49930 /* publictypes.h */,
+				F47BEE3F2B3E2CB700D49930 /* queue.h */,
+				F47BEE2E2B3E2CB700D49930 /* rbtree.h */,
+				F47BEE2D2B3E2CB700D49930 /* readbarcode.h */,
+				F47BEE5A2B3E2CB800D49930 /* recog.h */,
+				F47BEE492B3E2CB700D49930 /* regutils.h */,
+				F47BEE2C2B3E2CB700D49930 /* renderer.h */,
+				F47BEE4F2B3E2CB700D49930 /* resultiterator.h */,
+				F47BEE4E2B3E2CB700D49930 /* stack.h */,
+				F47BEE562B3E2CB800D49930 /* stringcode.h */,
+				F47BEE2A2B3E2CB700D49930 /* sudoku.h */,
+				F47BEE632B3E2CB800D49930 /* tiff.h */,
+				F47BEE452B3E2CB700D49930 /* tiffconf.h */,
+				F47BEE422B3E2CB700D49930 /* tiffio.h */,
+				F47BEE362B3E2CB700D49930 /* tiffvers.h */,
+				F47BEE512B3E2CB700D49930 /* unichar.h */,
+				F47BEE432B3E2CB700D49930 /* version.h */,
+				F47BEE3B2B3E2CB700D49930 /* watershed.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -321,59 +349,66 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62BA6BB524AC700E0097319E /* bmf.h in Headers */,
-				62BA6BAE24AC700D0097319E /* ccbord.h in Headers */,
+				F47BEE822B3E2CB800D49930 /* bmfdata.h in Headers */,
+				F47BEE782B3E2CB800D49930 /* png.h in Headers */,
+				F47BEE642B3E2CB800D49930 /* pnglibconf.h in Headers */,
+				F47BEE982B3E2CB800D49930 /* tiffio.h in Headers */,
+				F47BEED82B3E2CB800D49930 /* ccbord_internal.h in Headers */,
+				F47BEEA62B3E2CB800D49930 /* regutils.h in Headers */,
+				F47BEEC62B3E2CB800D49930 /* pngconf.h in Headers */,
+				F47BEED42B3E2CB800D49930 /* bmf.h in Headers */,
+				F47BEED22B3E2CB800D49930 /* osdetect.h in Headers */,
+				F47BEEAA2B3E2CB800D49930 /* jpeglib.h in Headers */,
+				F47BEEA02B3E2CB800D49930 /* ltrresultiterator.h in Headers */,
+				F47BEEAC2B3E2CB800D49930 /* array_internal.h in Headers */,
+				F47BEE7E2B3E2CB800D49930 /* imageio.h in Headers */,
+				F47BEE8E2B3E2CB800D49930 /* list.h in Headers */,
+				F47BEEC22B3E2CB800D49930 /* baseapi.h in Headers */,
+				F47BEE742B3E2CB800D49930 /* bmp.h in Headers */,
+				F47BEE7A2B3E2CB800D49930 /* gplot.h in Headers */,
+				F47BEE962B3E2CB800D49930 /* heap.h in Headers */,
+				F47BEE722B3E2CB800D49930 /* dewarp.h in Headers */,
+				F47BEE8C2B3E2CB800D49930 /* export.h in Headers */,
+				F47BEEA82B3E2CB800D49930 /* alltypes.h in Headers */,
+				F47BEE7C2B3E2CB800D49930 /* endianness.h in Headers */,
+				F47BEEB22B3E2CB800D49930 /* resultiterator.h in Headers */,
+				F47BEE9E2B3E2CB800D49930 /* tiffconf.h in Headers */,
+				F47BEEC02B3E2CB800D49930 /* stringcode.h in Headers */,
+				F47BEE702B3E2CB800D49930 /* rbtree.h in Headers */,
+				F47BEEBA2B3E2CB800D49930 /* colorfill.h in Headers */,
+				F47BEEDA2B3E2CB800D49930 /* tiff.h in Headers */,
+				F47BEEC82B3E2CB800D49930 /* recog.h in Headers */,
+				F47BEEBC2B3E2CB800D49930 /* jerror.h in Headers */,
+				F47BEE902B3E2CB800D49930 /* array.h in Headers */,
+				F47BEEA42B3E2CB800D49930 /* pix_internal.h in Headers */,
+				F47BEE862B3E2CB800D49930 /* jconfig.h in Headers */,
+				F47BEECE2B3E2CB800D49930 /* capi.h in Headers */,
+				F47BEE842B3E2CB800D49930 /* ocrclass.h in Headers */,
+				F47BEEB82B3E2CB800D49930 /* jbclass.h in Headers */,
+				F47BEE802B3E2CB800D49930 /* tiffvers.h in Headers */,
+				F47BEE682B3E2CB800D49930 /* sudoku.h in Headers */,
+				F47BEED02B3E2CB800D49930 /* bbuffer.h in Headers */,
+				F47BEE762B3E2CB800D49930 /* environ.h in Headers */,
+				F47BEED62B3E2CB800D49930 /* jmorecfg.h in Headers */,
+				F47BEE882B3E2CB800D49930 /* ptra.h in Headers */,
+				F47BEEA22B3E2CB800D49930 /* hashmap.h in Headers */,
+				F47BEE6E2B3E2CB800D49930 /* readbarcode.h in Headers */,
+				F47BEECC2B3E2CB800D49930 /* leptwin.h in Headers */,
+				F47BEEB62B3E2CB800D49930 /* unichar.h in Headers */,
+				F47BEEB42B3E2CB800D49930 /* bilateral.h in Headers */,
+				F47BEE9A2B3E2CB800D49930 /* version.h in Headers */,
+				F47BEE6C2B3E2CB800D49930 /* renderer.h in Headers */,
+				F47BEE9C2B3E2CB800D49930 /* pix.h in Headers */,
+				F47BEEC42B3E2CB800D49930 /* publictypes.h in Headers */,
+				F47BEEAE2B3E2CB800D49930 /* arrayaccess.h in Headers */,
+				F47BEEB02B3E2CB800D49930 /* stack.h in Headers */,
+				F47BEE922B3E2CB800D49930 /* queue.h in Headers */,
+				F47BEE942B3E2CB800D49930 /* pageiterator.h in Headers */,
+				F47BEECA2B3E2CB800D49930 /* morph.h in Headers */,
+				F47BEEBE2B3E2CB800D49930 /* allheaders.h in Headers */,
+				F47BEE8A2B3E2CB800D49930 /* watershed.h in Headers */,
+				F47BEE662B3E2CB800D49930 /* ccbord.h in Headers */,
 				62BA6BE924AC77DB0097319E /* libtesseract.h in Headers */,
-				62BA6BE324AC70110097319E /* stringcode.h in Headers */,
-				62BA6BD524AC70100097319E /* jbclass.h in Headers */,
-				62BA6BB324AC700E0097319E /* arrayaccess.h in Headers */,
-				62BA6BC324AC700F0097319E /* heap.h in Headers */,
-				62BA6BB924AC700E0097319E /* rbtree.h in Headers */,
-				62BA6BD924AC70110097319E /* ptra.h in Headers */,
-				62BA6BC924AC700F0097319E /* queue.h in Headers */,
-				62BA6BAF24AC700D0097319E /* imageio.h in Headers */,
-				62BA6BDE24AC70110097319E /* allheaders.h in Headers */,
-				62BA6BC824AC700F0097319E /* regutils.h in Headers */,
-				62BA6BDD24AC70110097319E /* morph.h in Headers */,
-				62BA6BC124AC700F0097319E /* capi.h in Headers */,
-				62BA6BCF24AC70100097319E /* dewarp.h in Headers */,
-				62BA6BA824AC700D0097319E /* stack.h in Headers */,
-				62BA6BD624AC70100097319E /* sudoku.h in Headers */,
-				62BA6BB724AC700E0097319E /* array.h in Headers */,
-				62BA6BBA24AC700E0097319E /* alltypes.h in Headers */,
-				62BA6BAA24AC700D0097319E /* environ.h in Headers */,
-				62BA6BC724AC700F0097319E /* bbuffer.h in Headers */,
-				62BA6BE124AC70110097319E /* pix.h in Headers */,
-				62BA6BE424AC70110097319E /* list.h in Headers */,
-				62BA6BD124AC70100097319E /* endianness.h in Headers */,
-				62BA6BBD24AC700E0097319E /* gplot.h in Headers */,
-				62BA6BBF24AC700F0097319E /* recog.h in Headers */,
-				62BA6BCA24AC700F0097319E /* watershed.h in Headers */,
-				62BA6BDC24AC70110097319E /* bmp.h in Headers */,
-				62BA6BBE24AC700F0097319E /* pnglibconf.h in Headers */,
-				62BA6BD024AC70100097319E /* jconfig.h in Headers */,
-				62BA6BB824AC700E0097319E /* jmorecfg.h in Headers */,
-				62BA6BC624AC700F0097319E /* publictypes.h in Headers */,
-				62BA6BB224AC700E0097319E /* png.h in Headers */,
-				62BA6BB024AC700E0097319E /* renderer.h in Headers */,
-				62BA6BC424AC700F0097319E /* resultiterator.h in Headers */,
-				62BA6BE024AC70110097319E /* ocrclass.h in Headers */,
-				62BA6BCE24AC70100097319E /* ltrresultiterator.h in Headers */,
-				62BA6BAC24AC700D0097319E /* osdetect.h in Headers */,
-				62BA6BC524AC700F0097319E /* tiffvers.h in Headers */,
-				62BA6BC024AC700F0097319E /* leptwin.h in Headers */,
-				62BA6BC224AC700F0097319E /* tiffio.h in Headers */,
-				62BA6BDB24AC70110097319E /* pageiterator.h in Headers */,
-				62BA6BAB24AC700D0097319E /* bilateral.h in Headers */,
-				62BA6BCC24AC70100097319E /* unichar.h in Headers */,
-				62BA6BB624AC700E0097319E /* jpeglib.h in Headers */,
-				62BA6BD224AC70100097319E /* baseapi.h in Headers */,
-				62BA6BDA24AC70110097319E /* tiff.h in Headers */,
-				62BA6BD324AC70100097319E /* jerror.h in Headers */,
-				62BA6BBB24AC700E0097319E /* bmfdata.h in Headers */,
-				62BA6BB424AC700E0097319E /* pngconf.h in Headers */,
-				62BA6BD724AC70100097319E /* readbarcode.h in Headers */,
-				62BA6BDF24AC70110097319E /* tiffconf.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,59 +416,66 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47BEE832B3E2CB800D49930 /* bmfdata.h in Headers */,
+				F47BEE792B3E2CB800D49930 /* png.h in Headers */,
+				F47BEE652B3E2CB800D49930 /* pnglibconf.h in Headers */,
+				F47BEE992B3E2CB800D49930 /* tiffio.h in Headers */,
+				F47BEED92B3E2CB800D49930 /* ccbord_internal.h in Headers */,
+				F47BEEA72B3E2CB800D49930 /* regutils.h in Headers */,
+				F47BEEC72B3E2CB800D49930 /* pngconf.h in Headers */,
+				F47BEED52B3E2CB800D49930 /* bmf.h in Headers */,
+				F47BEED32B3E2CB800D49930 /* osdetect.h in Headers */,
+				F47BEEAB2B3E2CB800D49930 /* jpeglib.h in Headers */,
+				F47BEEA12B3E2CB800D49930 /* ltrresultiterator.h in Headers */,
+				F47BEEAD2B3E2CB800D49930 /* array_internal.h in Headers */,
+				F47BEE7F2B3E2CB800D49930 /* imageio.h in Headers */,
+				F47BEE8F2B3E2CB800D49930 /* list.h in Headers */,
+				F47BEEC32B3E2CB800D49930 /* baseapi.h in Headers */,
+				F47BEE752B3E2CB800D49930 /* bmp.h in Headers */,
+				F47BEE7B2B3E2CB800D49930 /* gplot.h in Headers */,
+				F47BEE972B3E2CB800D49930 /* heap.h in Headers */,
+				F47BEE732B3E2CB800D49930 /* dewarp.h in Headers */,
+				F47BEE8D2B3E2CB800D49930 /* export.h in Headers */,
+				F47BEEA92B3E2CB800D49930 /* alltypes.h in Headers */,
+				F47BEE7D2B3E2CB800D49930 /* endianness.h in Headers */,
+				F47BEEB32B3E2CB800D49930 /* resultiterator.h in Headers */,
+				F47BEE9F2B3E2CB800D49930 /* tiffconf.h in Headers */,
+				F47BEEC12B3E2CB800D49930 /* stringcode.h in Headers */,
+				F47BEE712B3E2CB800D49930 /* rbtree.h in Headers */,
+				F47BEEBB2B3E2CB800D49930 /* colorfill.h in Headers */,
+				F47BEEDB2B3E2CB800D49930 /* tiff.h in Headers */,
+				F47BEEC92B3E2CB800D49930 /* recog.h in Headers */,
+				F47BEEBD2B3E2CB800D49930 /* jerror.h in Headers */,
+				F47BEE912B3E2CB800D49930 /* array.h in Headers */,
+				F47BEEA52B3E2CB800D49930 /* pix_internal.h in Headers */,
+				F47BEE872B3E2CB800D49930 /* jconfig.h in Headers */,
+				F47BEECF2B3E2CB800D49930 /* capi.h in Headers */,
+				F47BEE852B3E2CB800D49930 /* ocrclass.h in Headers */,
+				F47BEEB92B3E2CB800D49930 /* jbclass.h in Headers */,
+				F47BEE812B3E2CB800D49930 /* tiffvers.h in Headers */,
+				F47BEE692B3E2CB800D49930 /* sudoku.h in Headers */,
+				F47BEED12B3E2CB800D49930 /* bbuffer.h in Headers */,
+				F47BEE772B3E2CB800D49930 /* environ.h in Headers */,
+				F47BEED72B3E2CB800D49930 /* jmorecfg.h in Headers */,
+				F47BEE892B3E2CB800D49930 /* ptra.h in Headers */,
+				F47BEEA32B3E2CB800D49930 /* hashmap.h in Headers */,
+				F47BEE6F2B3E2CB800D49930 /* readbarcode.h in Headers */,
+				F47BEECD2B3E2CB800D49930 /* leptwin.h in Headers */,
+				F47BEEB72B3E2CB800D49930 /* unichar.h in Headers */,
+				F47BEEB52B3E2CB800D49930 /* bilateral.h in Headers */,
+				F47BEE9B2B3E2CB800D49930 /* version.h in Headers */,
+				F47BEE6D2B3E2CB800D49930 /* renderer.h in Headers */,
+				F47BEE9D2B3E2CB800D49930 /* pix.h in Headers */,
+				F47BEEC52B3E2CB800D49930 /* publictypes.h in Headers */,
+				F47BEEAF2B3E2CB800D49930 /* arrayaccess.h in Headers */,
 				62BA6BEB24AC77DB0097319E /* libtesseract.h in Headers */,
-				62BA6B4024AC6C360097319E /* stringcode.h in Headers */,
-				62BA6B6A24AC6C380097319E /* morph.h in Headers */,
-				62BA6B4424AC6C360097319E /* watershed.h in Headers */,
-				62BA6B4A24AC6C360097319E /* pix.h in Headers */,
-				62BA6B5324AC6C370097319E /* sudoku.h in Headers */,
-				62BA6B3624AC6C350097319E /* regutils.h in Headers */,
-				62BA6B5F24AC6C370097319E /* recog.h in Headers */,
-				62BA6B6724AC6C370097319E /* bmf.h in Headers */,
-				62BA6B3724AC6C350097319E /* dewarp.h in Headers */,
-				62BA6B4224AC6C360097319E /* arrayaccess.h in Headers */,
-				62BA6B4724AC6C360097319E /* gplot.h in Headers */,
-				62BA6B3A24AC6C360097319E /* queue.h in Headers */,
-				62BA6B5E24AC6C370097319E /* ptra.h in Headers */,
-				62BA6B5C24AC6C370097319E /* rbtree.h in Headers */,
-				62BA6B6524AC6C370097319E /* stack.h in Headers */,
-				62BA6B3224AC6C350097319E /* ccbord.h in Headers */,
-				62BA6B5024AC6C360097319E /* imageio.h in Headers */,
-				62BA6B4F24AC6C360097319E /* jbclass.h in Headers */,
-				62BA6B4624AC6C360097319E /* list.h in Headers */,
-				62BA6B6624AC6C370097319E /* array.h in Headers */,
-				62BA6B4C24AC6C360097319E /* endianness.h in Headers */,
-				62BA6B3D24AC6C360097319E /* bbuffer.h in Headers */,
-				62BA6B3C24AC6C360097319E /* heap.h in Headers */,
-				62BA6B5D24AC6C370097319E /* environ.h in Headers */,
-				62BA6B5624AC6C370097319E /* alltypes.h in Headers */,
-				62BA6AF224AC6B570097319E /* capi.h in Headers */,
-				62BA6AF424AC6B610097319E /* allheaders.h in Headers */,
-				62BA6B6424AC6C370097319E /* ltrresultiterator.h in Headers */,
-				62BA6B3E24AC6C360097319E /* tiff.h in Headers */,
-				62BA6B4824AC6C360097319E /* jerror.h in Headers */,
-				62BA6B3824AC6C350097319E /* pnglibconf.h in Headers */,
-				62BA6B5924AC6C370097319E /* png.h in Headers */,
-				62BA6B3324AC6C350097319E /* pngconf.h in Headers */,
-				62BA6B4524AC6C360097319E /* osdetect.h in Headers */,
-				62BA6B3524AC6C350097319E /* jmorecfg.h in Headers */,
-				62BA6B5824AC6C370097319E /* tiffconf.h in Headers */,
-				62BA6B4B24AC6C360097319E /* tiffio.h in Headers */,
-				62BA6B3024AC6C350097319E /* ocrclass.h in Headers */,
-				62BA6B3B24AC6C360097319E /* tiffvers.h in Headers */,
-				62BA6B5124AC6C360097319E /* readbarcode.h in Headers */,
-				62BA6B5A24AC6C370097319E /* publictypes.h in Headers */,
-				62BA6B6824AC6C370097319E /* renderer.h in Headers */,
-				62BA6B4D24AC6C360097319E /* bmfdata.h in Headers */,
-				62BA6B6224AC6C370097319E /* leptwin.h in Headers */,
-				62BA6B3424AC6C350097319E /* resultiterator.h in Headers */,
-				62BA6B5224AC6C370097319E /* bilateral.h in Headers */,
-				62BA6B4124AC6C360097319E /* baseapi.h in Headers */,
-				62BA6B5B24AC6C370097319E /* bmp.h in Headers */,
-				62BA6B5524AC6C370097319E /* unichar.h in Headers */,
-				62BA6B6024AC6C370097319E /* jconfig.h in Headers */,
-				62BA6B4324AC6C360097319E /* pageiterator.h in Headers */,
-				62BA6B5724AC6C370097319E /* jpeglib.h in Headers */,
+				F47BEEB12B3E2CB800D49930 /* stack.h in Headers */,
+				F47BEE932B3E2CB800D49930 /* queue.h in Headers */,
+				F47BEE952B3E2CB800D49930 /* pageiterator.h in Headers */,
+				F47BEECB2B3E2CB800D49930 /* morph.h in Headers */,
+				F47BEEBF2B3E2CB800D49930 /* allheaders.h in Headers */,
+				F47BEE8B2B3E2CB800D49930 /* watershed.h in Headers */,
+				F47BEE672B3E2CB800D49930 /* ccbord.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
